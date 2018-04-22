@@ -4,7 +4,7 @@ class CreateCostumes < ActiveRecord::Migration[5.2]
 # file name after the number, so in this case:
 # 002_create_costumes.rb becomes class CreateCostumes
   def change
-    create_table :Costumes do |t|
+    create_table :costumes do |t|
       t.string :name
       t.text :image_url
       t.float :price
