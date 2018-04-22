@@ -1,2 +1,9 @@
 # Create your haunted_houses migration here
 class HauntedHouses < ActiveRecord::Migration[5.2]
+  def create_table :haunted_houses do |t|
+    t.string :name
+    t.text :location
+    t.text :theme
+    t.integer :price
+    t.boolean :family_friendly
+    
